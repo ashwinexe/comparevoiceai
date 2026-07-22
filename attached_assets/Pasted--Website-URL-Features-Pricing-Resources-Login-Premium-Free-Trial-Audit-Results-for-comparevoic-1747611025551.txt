@@ -1,0 +1,414 @@
+
+Website URL
+Features 
+Pricing
+Resources 
+ 
+Login
+Premium - Free Trial
+Audit Results for comparevoiceai.com
+C
+Your page could be better
+B+
+On-Page SEO
+
+F
+Links
+
+C+
+Usability
+
+A+
+Performance
+
+F
+Social
+
+Report Generated: 18 May 11:29PM UTC Refresh Results Now
+
+Improve Your Site With Our DIY SEO Tool
+Review unlimited pages. Crawl your whole site for problems and get clear, easy to follow recommendations with guides for your CMS. Monitor your keyword rankings and get regular updates on your site's performance.
+
+Helping Business Owners promote their websites the affordable way.
+
+
+Recommendations
+Toggle:
+Execute a Link Building Strategy
+LinksHigh Priority
+Implement a XML sitemaps file
+On-Page SEOMedium Priority
+Increase length of title tag
+On-Page SEOMedium Priority
+Add Canonical Tag
+On-Page SEOMedium Priority
+Create and link your Facebook Page
+SocialLow Priority
+Create and link your X profile
+SocialLow Priority
+Use your main keywords across the important HTML tags
+On-Page SEOLow Priority
+Optimize your page for Mobile PageSpeed Insights
+UsabilityLow Priority
+Optimize your page for Desktop PageSpeed Insights
+UsabilityLow Priority
+Add a DMARC mail record
+OtherLow Priority
+Add an SPF record
+OtherLow Priority
+Add Schema Markup
+On-Page SEOLow Priority
+Add X Cards
+SocialLow Priority
+Create and link associated Instagram profile
+SocialLow Priority
+Create and link an associated YouTube channel
+SocialLow Priority
+Create and link an associated LinkedIn profile
+SocialLow Priority
+Add business address and phone number
+OtherLow Priority
+Add Local Business Schema
+OtherLow Priority
+Setup & Install a Facebook Pixel
+SocialLow Priority
+On-Page SEO Results
+B+
+Your On-Page SEO could be better
+Your page has some level of On-Page SEO optimization but could be improved further. On-Page SEO is important to ensure Search Engines can understand your content appropriately and help it rank for relevant keywords. You should ensure that HTML Tag Content is completed correctly and align text content to target keywords.
+Title Tag
+You have a title tag, but ideally it should be between 50 and 60 characters in length (including spaces).
+
+Voice Agent Pricing Calculator
+
+Length : 30
+Title tags are very important for search engines to correctly understand and categorize your content.
+Meta Description Tag
+Your page has a meta description of optimal length (between 120 and 160 characters).
+
+Calculate the total cost of running voice AI conversations based on various API services and infrastructure costs with this interactive pricing calculator.
+
+Length : 155
+SERP Snippet Preview
+This illustrates how your page may appear in Search Results. Note, this is intended as a guide and Search Engines are more frequently generating this content dynamically.
+https://comparevoiceai.com⋮
+Voice Agent Pricing Calculator
+Calculate the total cost of running voice AI conversations based on various API services and infrastructure costs with this interactive pricing ...
+Hreflang Usage
+Your page is not making use of Hreflang attributes.
+Language
+Your page is using the lang attribute.
+
+Declared: English
+H1 Header Tag Usage
+Your page has a H1 Tag.
+H2-H6 Header Tag Usage
+Your page is making use multiple levels of Header Tags.
+
+Header Tag	Frequency	
+H2	4	
+H3	11	
+H4	9	
+H5	0	
+H6	0	
+Keyword Consistency
+Your page's main keywords are not distributed well across the important HTML tags.
+Your page content should be focused around particular keywords you would like to rank for. Ideally these keywords should also be distributed across tags such as the title, meta and header tags.
+Individual Keywords
+Keyword	Title	Meta Description Tag	Headings Tags	Page Frequency	
+cost				25	
+latency				17	
+voice				11	
+llm				10	
+total				8	
+input				8	
+costs				7	
+output				7	
+Phrases
+Phrase	Title	Meta Description Tag	Headings Tags	Page Frequency	
+voice-to-voice latency				6	
+total cost				4	
+cost and latency				4	
+ms opus				3	
+voice agent				2	
+agent pricing				2	
+pricing calculator				2	
+voice ai				2	
+Amount of Content
+Your page has a good level of textual content, which will assist in it's ranking potential.
+
+Word Count: 873
+Image Alt Attributes
+You do not have any images missing Alt attributes on your page.
+Canonical Tag
+Your page is not using the Canonical Tag.
+The Canonical Tag tells Search Engines the primary URL of a page. Google recommends all pages specify a Canonical.
+Noindex Tag Test
+Your page is not using the Noindex Tag which prevents indexing.
+Noindex Header Test
+Your page is not using the Noindex Header which prevents indexing.
+SSL Enabled
+Your website has SSL enabled.
+HTTPS Redirect
+Your page successfully redirects to a HTTPS (SSL secure) version.
+Robots.txt
+Your website appears to have a robots.txt file.
+http://comparevoiceai.com/robots.txt
+Blocked by Robots.txt
+Your page does not appear to be blocked by robots.txt.
+XML Sitemaps
+We have not detected or been able to retrieve a XML sitemaps file successfully.
+Sitemaps are recommended to ensure that search engines can intelligently crawl all of your pages.
+Create it yourself with our free tool: 
+
+Analytics
+Your page is using an analytics tool.
+  Google Analytics
+Schema.org Structured Data
+We have not detected any usage of Schema.org on your page.
+Schema.org is a structured data markup for webpages which helps Search Engines understand your site better and provide rich snippets directly in their search results.
+Links
+Backlink Summary
+You have a reasonably weak level of backlink activity to this page.
+Search Engines use backlinks as a strong indicator of a page's authority, relevance and ranking potential. There are various strategies available to gain links to a page to improve this factor
+0
+Domain
+Strength
+
+0
+Page
+Strength
+
+ 1
+Backlinks
+ 1
+Referring Domains
+ 0
+Nofollow Backlinks
+ 1
+Dofollow Backlinks
+ 0
+Edu Backlinks
+ 0
+Gov Backlinks
+ 1
+Subnets
+ 1
+IPs
+Top Backlinks
+These are the highest value external pages we have found linking to your site.
+Domain
+strength	Referring Page URL	Referring Page Title	Anchor Text
+84	https://icsdweb.aegean.gr/info-sec-lab/news/	News – Info-Sec-Lab	Compare Voice AI cost and latency
+Top Pages by Backlinks
+These are the pages on your site with the most the backlinks from other sites.
+URL	Backlinks	
+https://comparevoiceai.com/	1	
+Top Anchors by Backlinks
+These are the top pieces of Anchor Text we found used to link to your site.
+Anchor	Backlinks	
+Compare Voice AI cost and latency	1	
+Top Referring Domain Geographies
+These are the Top Geographies we have found linking to your site.
+Top TLDs
+Top Countries
+On-Page Link Structure
+We found 4 total links. 75% of your links are external links and are sending authority to other sites. 0% of your links are nofollow links, meaning authority is not being passed to those destination pages.
+Friendly Links
+Your link URLs appear friendly (easily human or search engine readable).
+
+Create White Label PDFs
+Upload your own logo and company's contact details. Generate unlimited PDFs under our White Label plans. See an example PDF Report
+
+Embed the Audit Tool into your website. Get notified of leads straight from your website.
+
+
+Usability
+C+
+Your usability could be better
+Your page is OK but could be more usable across devices. Usability is important to maximize your available audience and minimize user bounce rates (which can indirectly affect your search engine rankings).
+Device Rendering
+This check visually demonstrates how your page renders on different devices. It is important that your page is optimized for mobile and tablet experiences as today the majority of web traffic comes from these sources.
+Google's Core Web Vitals
+Google is indicating that they do not have 'sufficient real-world speed data for this page' in order to make a Core Web Vitals assessment. This can occur for smaller websites or those that are not crawl-able by Google.
+Use of Mobile Viewports
+Your page specifies a viewport matching the device's size, allowing it to render appropriately across devices.
+Google's PageSpeed Insights - Mobile
+Google is indicating that your page is scoring poorly on their Mobile PageSpeed Insights evaluation.
+
+Note that this evaluation is being performed from US servers and the results may differ slightly from an evaluation carried out from Google's PageSpeed Web Interface as that reporting localizes to the region in which you are running the report.
+Google has indicated that the performance of a webpage is becoming more important from a user and subsequently ranking perspective.
+54
+Lab Data	Value
+First Contentful Paint	4.8 s
+Speed Index	5.4 s
+Largest Contentful Paint	7.8 s
+Time to Interactive	7.8 s
+Total Blocking Time	0.2 s
+Cumulative Layout Shift	0
+Opportunities	Estimated Savings
+Reduce unused JavaScript	1.21 s
+Eliminate render-blocking resources	1.04 s
+Avoid multiple page redirects	0.63 s
+Properly size images	0.4 s
+Reduce unused CSS	0.3 s
+Serve images in next-gen formats	0.17 s
+Google's PageSpeed Insights - Desktop
+Google is indicating that your page is scoring poorly on their Desktop PageSpeed Insights evaluation.
+Google has indicated that the performance of a webpage is becoming more important from a user and subsequently ranking perspective.
+83
+Lab Data	Value
+First Contentful Paint	0.9 s
+Speed Index	1.1 s
+Largest Contentful Paint	1.6 s
+Time to Interactive	1.6 s
+Total Blocking Time	0.05 s
+Cumulative Layout Shift	0.319
+Opportunities	Estimated Savings
+Eliminate render-blocking resources	0.28 s
+Reduce unused JavaScript	0.21 s
+Avoid multiple page redirects	0.19 s
+Flash Used?
+No Flash content has been identified on your page.
+iFrames Used?
+There are no iFrames detected on your page.
+Favicon
+Your page has specified a favicon.
+Email Privacy
+No email addresses have been found in plain text on your page.
+Legible Font Sizes
+The text on your page appears to be legible across devices.
+Tap Target Sizing
+The links and buttons on your page appear to be appropriately sized for a user to easily tap on a touchscreen.
+Performance Results
+A+
+Your performance is very good!
+Congratulations, your page has performed very well in our testing meaning it should be reasonably fast and responsive for users. Performance is important to ensure a good user experience, and reduced bounce rates (which can also indirectly affect your search engine rankings). Continue to monitor your performance over time to ensure there are no periodic fluctuations.
+Page Speed Info
+Your page loads in a reasonable amount of time.
+Server Response
+All Page Content Loaded
+All Page Scripts Complete
+Download Page Size
+Your page's file size is reasonably low which is good for Page Load Speed and user experience.
+Download Page Size
+Download Page Size Breakdown
+Website Compression (Gzip, Deflate, Brotli)
+Your website appears to be using a reasonable level of compression.
+Compression Rates
+Raw Page Size Breakdown
+Number of Resources
+This check displays the total number of files that need to be retrieved from web servers to load your page.
+20
+
+Total Objects
+
+ 
+3
+
+Number of HTML Pages
+
+ 
+3
+
+Number of JS Resources
+
+ 
+2
+
+Number of CSS Resources
+
+ 
+1
+
+Number of Images
+
+ 
+11
+
+Other Resources
+
+Google Accelerated Mobile Pages (AMP)
+This page does not appear to have AMP Enabled.
+JavaScript Errors
+Your page is not reporting any JavaScript errors.
+HTTP2 Usage
+Your website is using the recommended HTTP/2+ protocol.
+Optimize Images
+All of the images on your page appear to be optimized.
+Minification
+All your JavaScript and CSS files appear to be minified.
+Deprecated HTML
+No deprecated HTML tags have been found within your page.
+Inline Styles
+No inline styles have been found within your page's HTML tags.
+Social Results
+F
+Your social needs improvement
+You appear to have a weak social presence or level of social activity (or we may just not be able to see your profiles!). Social activity is important for customer communication, brand awareness and as a marketing channel to bring visitors to your website. We recommend that you list all of your profiles on your page for visibility, and begin to build a following on those networks.
+Facebook Page Linked
+No associated Facebook Page found as a link on your page.
+Facebook Open Graph Tags
+Your page is using Facebook Open Graph Tags.
+Facebook Pixel
+We have not detected a Facebook Pixel on your page.
+Facebook's Pixel is a useful piece of analytics code that allows you to retarget visitors if you decide to run Facebook Ads in future.
+X (formerly Twitter) Account Linked
+No associated X profile found as a link on your page.
+X Cards
+We have not detected X Cards on your page.
+X Cards are a type of structured data that can be placed on your page to control what content is shown when a page is shared on X.
+Instagram Linked
+No associated Instagram profile found linked on your page
+LinkedIn Page Linked
+No associated LinkedIn profile found linked on your page.
+YouTube Channel Linked
+No associated YouTube channel found linked on your page.
+YouTube Channel Activity
+No associated YouTube channel found linked on your page.
+Want to grow your YouTube Channel? Try our YouTube SEO Tool 
+Local SEO
+Address & Phone Shown on Website
+We can't identify one or both of these components on the page. Missing: Phone, Address
+Local Business Schema
+No Local Business Schema identified on the page.
+Google Business Profile Identified
+You can see information about your page's Google Business Profile within this report by signing up to one of our premium plans.
+Want to improve your Local Search Presence? Try our Local SEO Tool 
+Technology Results
+Technology List
+These software or coding libraries have been identified on your page.
+Technology	Version
+	Cloudflare	
+	Cloudflare Browser Insights	
+	Express	
+	Google Analytics	
+	Google Cloud	
+	Google Cloud CDN	
+	Google Cloud Trace	
+HSTS	
+	HTTP/3	
+	Node.js	
+Server IP Address
+172.67.219.63
+DNS Servers
+kobe.ns.cloudflare.com
+leah.ns.cloudflare.com
+Web Server
+cloudflare
+Charset
+text/html; charset=UTF-8
+DMARC Record
+This site does not appear to have a DMARC record in place.
+DMARC records are important to improve email deliverability and combat spoofing.
+SPF Record
+This site does not appear to have an SPF record.
+SPF records are important to improve email deliverability and combat spoofing.
+Review Child Pages
+Page
+/blog
+Embed an Audit Tool into your Agency's Site
+Match your website's styling and colors. Show your customer a beautiful branded report. Get notified of leads straight to your Inbox.
+
+
+

@@ -1,0 +1,17 @@
+{
+  "name": "CompareVoiceAI Pricing Calculator",
+  "short_name": "CompareVoiceAI",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "theme_color": "#5E17EB",
+  "background_color": "#f7f7f7",
+  "display": "standalone",
+  "start_url": "/",
+  "scope": "/"
+}

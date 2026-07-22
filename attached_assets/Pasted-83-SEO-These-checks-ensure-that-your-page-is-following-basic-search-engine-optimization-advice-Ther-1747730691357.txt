@@ -1,0 +1,38 @@
+83
+SEO
+These checks ensure that your page is following basic search engine optimization advice. There are many additional factors Lighthouse does not score here that may affect your search ranking, including performance on Core Web Vitals. Learn more about Google Search Essentials.
+Crawling and Indexing
+Links are not crawlable
+Search engines may use href attributes on links to crawl websites. Ensure that the href attribute of anchor elements links to an appropriate destination, so more pages of the site can be discovered. Learn how to make links crawlable
+Uncrawlable Link
+a.block.border-4.border-black.p-6.bg-white.shadow-[8px_8px_0px_0px_rgba(0,0,0)].mb-4
+a.inline-block.px-6.py-3.bg-[#5E17EB].text-white.font-medium.border-2.border-black.shadow-[4px_4px_0px_0px_rgba(0,0,0)].hover:translate-x-[2px].hover:translate-y-[2px].hover:shadow-[2px_2px_0px_0px_rgba(0,0,0)].transition-all
+Mastering Turn Detection and Interruption Handling in Voice AI Applications May…
+<a class="block">
+How to choose a Speech to Text (STT) provider for your voice AI agent May 18, 2…
+<a class="block">
+How to choose a Text to Speech (TTS) provider for your AI Voice agent May 18, 2…
+<a class="block">
+Which LLM provider to choose while building Voice AI agents May 18, 2025 • Nikh…
+<a class="block">
+How to build a Voice AI agent stack - Technical considerations May 17, 2025 • N…
+<a class="block">
+How to save and optimise costs while buiding Voice AI agents May 16, 2025 • Nik…
+<a class="block">
+How to optimise latency while buiding Voice AI agents May 16, 2025 • Nikhil. R …
+<a class="block">
+How is latency and cost calcualted for Voice Agents May 15, 2025 • Nikhil. R V…
+<a class="block">
+Voice AI Model Pricing Calculator - Your Guide to Cost Analysis between model p…
+<a class="block">
+a.inline-block.px-4.py-2.bg-[#5E17EB].text-white.font-medium.border-2.border-black.shadow-[4px_4px_0px_0px_rgba(0,0,0)].hover:translate-x-[2px].hover:translate-y-[2px].hover:shadow-[2px_2px_0px_0px_rgba(0,0,0)].transition-all
+To appear in search results, crawlers need access to your app.
+Content Best Practices
+Document does not have a valid rel=canonicalPoints to the domain's root URL (the homepage), instead of an equivalent page of content
+Format your HTML in a way that enables crawlers to better understand your app’s content.
+Additional items to manually check (1)
+Show
+Run these additional validators on your site to check additional SEO best practices.
+Passed audits (7)
+Show
+Not applicable (1)

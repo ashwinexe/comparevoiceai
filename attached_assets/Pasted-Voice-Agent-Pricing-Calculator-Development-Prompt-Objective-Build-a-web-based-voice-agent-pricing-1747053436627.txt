@@ -1,0 +1,73 @@
+Voice Agent Pricing Calculator - Development Prompt
+Objective: Build a web-based voice agent pricing calculator that calculates the total cost of running voice AI conversations based on various API services and infrastructure costs.
+Calculator Structure
+1. Input Parameters
+Create input fields for the following API costs:
+* Transcription cost per minute (default: $0.0065)
+* LLM input token cost (default: $0.000002)
+* LLM output token cost (default: $0.000008)
+* Voice model cost per character (default: $0.000037375)
+* vCPU cost per minute (default: $0.00007083333)
+2. Calculation Assumptions
+Create adjustable input fields for these assumptions:
+* Spoken words per minute (default: 100)
+* Tokens per word (default: 1.3)
+* Characters per word (default: 6)
+* Turns per minute (default: 4)
+* LLM vs user speech ratio (default: 0.5, meaning LLM speaks 50% of the time)
+3. Conversation Parameters
+Create input fields for:
+* Conversation length in minutes (default: 10)
+* Number of agent processes per vCPU (default: 1)
+Calculation Logic
+1. LLM Token Calculations
+LLM Input Tokens formula:
+
+(spoken_words_per_minute * tokens_per_word / turns_per_minute) * (turns_per_minute * conversation_length) * (turns_per_minute * conversation_length + 1) / 2
+LLM Output Tokens formula:
+
+spoken_words_per_minute * tokens_per_word * llm_speech_ratio * conversation_length
+2. Cost Calculations
+* Transcription cost = transcription_cost_per_minute * conversation_length
+* LLM cost = (llm_input_tokens * llm_input_token_cost) + (llm_output_tokens * llm_output_token_cost)
+* Voice cost = voice_cost_per_character * spoken_words_per_minute * characters_per_word * (1 - llm_speech_ratio) * conversation_length
+* Hosting cost = (vcpu_cost_per_minute * conversation_length) / agents_per_vcpu
+* Total cost = Transcription cost + LLM cost + Voice cost + Hosting cost
+* Cost per minute = Total cost / conversation_length
+UI Requirements
+1. Layout:
+    * Create a clean, responsive layout with three main sections:
+        * API Costs (left column)
+        * Calculation Assumptions (right column)
+        * Results/Outputs (bottom section)
+2. Input Fields:
+    * All input fields should be numerical with appropriate step values
+    * Include labels and units ($ for costs, minutes for time, etc.)
+    * Real-time calculation updates when values change
+3. Output Display:
+    * Show calculated token counts (input and output)
+    * Show itemized costs (transcription, LLM, voice, hosting)
+    * Highlight total cost and cost per minute prominently
+    * Format currency values to 4 decimal places for precision
+4. Additional Features:
+    * Add reset button to restore default values
+    * Include tooltips explaining each parameter
+    * Add ability to save/load different pricing scenarios
+    * Include visualization (pie chart) showing cost breakdown
+    * Export results to CSV option
+Technical Implementation
+1. should be a static site. only frontend. 
+2. make it neobrutalist theme
+3. Implement proper number formatting and validation
+4. Add error handling for edge cases (division by zero, negative values)
+5. Make it mobile-responsive
+6. Consider adding presets for common voice api providers
+
+Formula Documentation inside FAQ section
+Include a help section that explains:
+* How each cost component is calculated
+* The relationship between parameters
+* Best practices for cost optimization
+* Examples of typical conversation patterns
+* 
+The calculator should provide transparency in pricing calculations while being user-friendly for both technical and non-technical users planning voice agent deployments.

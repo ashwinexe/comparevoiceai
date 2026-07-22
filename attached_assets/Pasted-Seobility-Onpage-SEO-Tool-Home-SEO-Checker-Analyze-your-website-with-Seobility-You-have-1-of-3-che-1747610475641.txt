@@ -1,0 +1,285 @@
+Seobility Onpage SEO Tool
+Home  SEO Checker
+Analyze your website with Seobility:
+You have 1 of 3 checks left today.
+
+https://comparevoiceai.com/
+Comparevoiceai.com - SEO Checker
+Overview of the SEO Check
+
+
+Meta information
+100% 
+Page quality
+52% 
+Page structure
+58% 
+Link structure
+0% 
+Server
+0% 
+External factors
+3% 
+SEO Score
+56%
+SEO Score Widget
+ Response time0.20 s
+ File size2.70 kB
+ Words0
+ Media files0
+ Number of links0 internal / 0 external
+Task list of SEO Improvements5 Tasks
+
+Add a H1 heading to this page.
+Very important!
+
+Use good headings on the page.
+Very important!
+
+This page has only very few internal links. If it's a welcome page, consider removing it.
+Very important!
+
+Use 301 redirects to drive traffic to URLS with the same domain and sub domain (www and non-www subdomain).
+Very important!
+
+The page title should be better suited to the content of the page.
+Important!
+Meta specifications100% achieved
+Title
+Voice Agent Pricing Calculator
+ The length of the page title is perfect. (271 pixels out of 580 max pixel length)
+ There are no duplicate words in the title
+ Meta Title
+Meta description
+Calculate the total cost of running voice AI conversations based on various API services and infrastructure costs with this interactive pricing calculator.
+ The length of the meta description is perfect. (920 pixels out of 1000 max pixel length)
+ Meta Description
+Crawlability
+ There are no problems in accessing the website.
+ Search Engine Crawlers
+Canonical URL
+ No canonical link is specified.
+ Canonical Tag
+Language
+Language defined in HTML: en
+Server location: India
+ The following language is defined by HTML: en
+ Declaring language in HTML
+Alternate/Hreflang Links
+ There are no alternate links specified on this page.
+ Hreflang
+Other meta tags
+ There is no rel next meta tag on this page.
+ There is no rel prev meta tag on this page.
+ Meta Tags
+Domain
+ The domain is no subdomain.
+ The domain length is good.
+ The domain does not contain non-latin characters.
+ Domain for SEO
+Page URL
+ No parameters were found in the URL.
+ No session ID was found in the URL.
+ The URL does not have too many subdirectories.
+ SEO-friendly URLs
+Charset encoding
+ The charset encoding (UTF-8) is set correctly.
+ Character Encoding
+Doctype
+ The doctype HTML 5 is set correctly.
+ The doctype is placed at first in the HTML code.
+ HTML Doctype
+Favicon
+ The favicon is linked correctly.
+ Favicon
+Meta tags
+Name	Value
+viewport	width=device-width, initial-scale=1.0, maximum-scale=1
+description	Calculate the total cost of running voice AI conversations based on various API services and infrastructure costs with this interactive pricing calculator.
+theme-color	#5E17EB
+msapplication-config	/browserconfig.xml
+lang	en
+og:title	Voice Agent Pricing Calculator
+og:description	Calculate the total cost of running voice AI conversations based on API and infrastructure costs.
+og:type	website
+charset	UTF-8
+
+Automatically check comparevoiceai.com including all subpages at once!
+ Check 300+ SEO parameters on every page of your website
+ Easy troubleshooting with optimization suggestions
+ Automated check for keyword optimization
+
+Guaranteed free of charge during trial period.
+Page quality52% achieved
+Content
+ There are only 0 words on this page. Use at least 250 words to provide useful information.
+ Some words from the page title are not used within the pages content
+ No paragraphs were detected.
+ No placeholders texts or images were found.
+ Content is King
+Frames
+ This page does not use a frameset.
+ Frames and framesets
+Mobile optimization
+ A viewport "width=device-width, initial-scale=1.0, maximum-scale=1" is provided.
+ At least one Apple touch icon is specified.
+ Mobile Optimization
+Bold and strong tags
+ The usage of strong and bold tags is perfect. We recommend the use of up to 6 tags for this page.
+ Strong and Bold Tags
+Image SEO
+ Alt text (alternative text) is correctly used on all found images.
+ Image SEO
+Social Networks
+ There are only a few social sharing widgets on the page. Make your website popular in social networks with social sharing widgets.
+ Social Sharing
+Additional markup
+ No additional page markup was found.
+HTTPS
+ This website uses HTTPS to protect privacy and integrity of the exchanged data.
+ All included files are also transferred via HTTPS.
+ HTTPS
+Media list
+No media files were found.
+Page structure58% achieved
+H1 heading
+ There is no H1 heading specified.
+ H1-H6 headings
+Headings
+ There are no headings specified on the page. Headings are important for search engine optimization and help to structure your content.
+ H1-H6 headings
+Heading structure
+No headings were found.
+Link structure0% achieved
+Internal links
+ This page seems to be an entry page, because only very few links were found.
+ Internal Linking
+External links
+ There are no external links on this page.
+ External Links
+Found links on this page
+No internal links were found.
+Server configuration0% achieved
+HTTP redirects
+The checked page does not redirect to another URL.
+ This website uses URLs with www and non-www subdomain. This may cause duplicate content and bad links to your website. Redirect Checker
+ WWW Redirect
+HTTP header
+ The X-powered header is sent within the response header. (unnecessary)
+ The web server transmits the web page (HTML) in compressed form.
+ HTTP headers
+Performance
+ The page response time is excellent with 0.20 seconds.
+ The file size of the HTML document is fine (3 kB).
+ Page Speed
+HTTP Response Header
+Name	Value
+date	Sun, 18 May 2025 23:19:19 GMT
+content-type	text/html; charset=UTF-8
+cf-ray	941f1428ee29063c-CDG
+server	cloudflare
+content-encoding	zstd
+cache-control	public, max-age=0
+last-modified	Sun, 18 May 2025 22:55:56 GMT
+strict-transport-security	max-age=63072000; includeSubDomains
+x-cloud-trace-context	de95c4a7a5e9bc6d72cce718f0698826
+x-powered-by	Express
+via	1.1 google
+alt-svc	h3=":443"; ma=86400
+cf-cache-status	DYNAMIC
+server-timing	cfCacheStatus;desc="DYNAMIC"
+report-to	{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=V08U7zqnA799ZqU7IlXO16g6fC0fL1fEUzos24T6vYwL2%2F88ZqDta6OjGysENBfjsPGs7tXN%2BVUMiqIP2eQIVZcBsZ45uIl%2BSiq3A9XcA5AbaZ47is8v01%2B%2BDmP0hUAe4%2BvYrQg%3D"}],"group":"cf-nel","max_age":604800}
+nel	{"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+statuscode	200
+http_version	HTTP/2
+External factors3% achieved
+Backlinks
+ This page has only a few links from other websites.
+ This page only has backlinks from 1 referring domains.
+ This page only has 1 backlinks.
+ This page only has few backlinks from 1 different ip addresses.
+ Backlinks
+Links from Wikipedia
+No links from Wikipedia were found.
+Robots.txt
+User-agent: *
+Allow: /
+Similar sites
+voice-ev.org
+calculator.net
+brand-trust.de
+dealhub.io
+business.gov.au
+voicemod.net
+desmos.com
+consultingcheck.com
+paddle.com
+nbc.com
+roll-pastuch.de
+bdc.ca
+openai.com
+ndis.gov.au
+apps.apple.com
+reactev.com
+strategyand.pwc.com
+accc.gov.au
+online-voice-recorder.com
+mathway.com
+Search preview
+comparevoiceai.com
+Voice Agent Pricing Calculator
+Calculate the total cost of running voice AI conversations based on various API services and infrastructure costs with this interactive pricing calculator.
+Most important keywords
+Following keywords were found. You can check the keyword optimization of this page for each keyword.
+
+Keyword	Result	Recheck
+voice	34%	Check
+pricing	23%	Check
+calculator	23%	Check
+Voice Agent Pricing Calculator	23%	Check
+Agent	11%	Check
+Calculate	11%	Check
+total	11%	Check
+cost	11%	Check
+running	11%	Check
+conversations	11%	Check
+Keywords
+
+Automatically check comparevoiceai.com including all subpages at once!
+ Check 300+ SEO parameters on every page of your website
+ Easy troubleshooting with optimization suggestions
+ Automated check for keyword optimization
+
+Guaranteed free of charge during trial period.
+Seobility Logo
+All-In-One SEO Software and Tools for website optimization and top rankings on Google
+
+Contact
+ support@seobility.net
+   
+
+Features
+Site Audit
+Website Rankings
+Backlink Analysis
+TF*IDF Tool
+Keyword Research Tool
+Plans & Pricing
+SEO Tools
+SEO Checker
+Keyword Checker
+Ranking Checker
+SEO Compare
+Backlink Checker
+Redirect Checker
+SERP Snippet Generator
+Resources
+Blog
+Wiki
+FAQ
+Team
+Affiliate Program
+API
+© 2025 - Seobility.net Version 1.8.63Contact | Terms & conditions | Privacy
+English Lang
+

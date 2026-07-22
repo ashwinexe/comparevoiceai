@@ -1,0 +1,11 @@
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <!-- Purple background -->
+  <rect x="0" y="0" width="64" height="64" fill="#5E17EB" />
+  
+  <!-- Sound wave bars -->
+  <rect x="14" y="20" width="4" height="24" fill="black" />
+  <rect x="22" y="14" width="4" height="36" fill="black" />
+  <rect x="30" y="8" width="4" height="48" fill="black" />
+  <rect x="38" y="14" width="4" height="36" fill="black" />
+  <rect x="46" y="20" width="4" height="24" fill="black" />
+</svg>

@@ -1,0 +1,33 @@
+{
+  "include": [
+    "client/src/**/*",
+    "shared/blog-types.ts",
+    "shared/providers.ts",
+    "shared/pricing-catalog.ts",
+    "scripts/**/*",
+    "tests/**/*",
+    "vite.config.ts"
+  ],
+  "exclude": ["node_modules", "build", "dist"],
+  "compilerOptions": {
+    "incremental": true,
+    "tsBuildInfoFile": "./node_modules/typescript/tsbuildinfo",
+    "noEmit": true,
+    "module": "ESNext",
+    "target": "ES2022",
+    "strict": true,
+    "lib": ["esnext", "dom", "dom.iterable"],
+    "jsx": "preserve",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "allowImportingTsExtensions": true,
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "baseUrl": ".",
+    "types": ["node", "vite/client"],
+    "paths": {
+      "@/*": ["./client/src/*"],
+      "@shared/*": ["./shared/*"]
+    }
+  }
+}

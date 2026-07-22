@@ -1,0 +1,11 @@
+node_modules
+dist
+.DS_Store
+server/public
+vite.config.ts.*
+*.tar.gz
+client/src/generated/blog-posts.json
+client/public/blog/assets/
+client/public/data/pricing-catalog.json
+.config/
+.local/

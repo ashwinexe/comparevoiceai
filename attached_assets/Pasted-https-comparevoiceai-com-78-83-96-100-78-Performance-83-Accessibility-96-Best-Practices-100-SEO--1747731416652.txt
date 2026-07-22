@@ -1,0 +1,259 @@
+https://comparevoiceai.com/
+
+78
+83
+96
+100
+78
+Performance
+83
+Accessibility
+96
+Best Practices
+100
+SEO
+78
+FCP
++7
+LCP
++15
+TBT
++30
+CLS
++17
+SI
++9
+Performance
+Values are estimated and may vary. The performance score is calculated directly from these metrics.See calculator.
+0–49
+50–89
+90–100
+Final Screenshot
+
+Metrics
+Expand view
+First Contentful Paint
+1.3 s
+Largest Contentful Paint
+2.1 s
+Total Blocking Time
+0 ms
+Cumulative Layout Shift
+0.181
+Speed Index
+1.3 s
+View Treemap
+Screenshot
+Screenshot
+Screenshot
+Screenshot
+Screenshot
+Screenshot
+Screenshot
+Screenshot
+Show audits relevant to:
+
+All
+
+FCP
+
+LCP
+
+TBT
+
+CLS
+Diagnostics
+Avoid large layout shifts 1 layout shift found
+These are the largest layout shifts observed on the page. Each table item represents a single layout shift, and shows the element that shifted the most. Below each item are possible root causes that led to the layout shift. Some of these layout shifts may not be included in the CLS metric value due to windowing. Learn how to improve CLSCLS
+Element
+Layout shift score
+div.grid.grid-cols-1.md:grid-cols-2.gap-4.mb-4	
+0.181
+Preload Largest Contentful Paint image Potential savings of 350 ms
+If the LCP element is dynamically added to the page, you should preload the image in order to improve LCP. Learn more about preloading LCP elements.LCP
+URL
+Potential Savings
+comparevoiceai.com 1st party
+350 ms
+img.max-w-full.h-auto.shadow-[1px_1px_0px_0px_rgba(0,0,0,1)]	
+/voiceaiflow.png(comparevoiceai.com)
+350 ms
+Largest Contentful Paint element 2,120 ms
+This is the largest contentful element painted within the viewport. Learn more about the Largest Contentful Paint elementLCP
+Element
+img.max-w-full.h-auto.shadow-[1px_1px_0px_0px_rgba(0,0,0,1)]
+Phase
+% of LCP
+Timing
+TTFB
+18%
+390 ms
+Load Delay
+50%
+1,060 ms
+Load Time
+26%
+560 ms
+Render Delay
+5%
+110 ms
+Reduce unused JavaScript Potential savings of 219 KiB
+Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. Learn how to reduce unused JavaScript.FCPLCP
+URL
+Transfer Size
+Potential Savings
+comparevoiceai.com 1st party
+293.8 KiB	170.6 KiB
+/assets/index-DS3wOCzY.js(comparevoiceai.com)
+293.8 KiB
+170.6 KiB
+Google Tag Manager tag-manager 
+120.2 KiB	48.7 KiB
+/gtag/js?id=G-Z67T9PYG8M(www.googletagmanager.com)
+120.2 KiB
+48.7 KiB
+Eliminate render-blocking resources Potential savings of 200 ms
+Resources are blocking the first paint of your page. Consider delivering critical JS/CSS inline and deferring all non-critical JS/styles. Learn how to eliminate render-blocking resources.FCPLCP
+URL
+Transfer Size
+Potential Savings
+comparevoiceai.com 1st party
+15.7 KiB	350 ms
+/assets/index-Ct7PeD8K.css(comparevoiceai.com)
+15.7 KiB
+350 ms
+Google Fonts cdn 
+1.0 KiB	260 ms
+/css2?family=…(fonts.googleapis.com)
+1.0 KiB
+260 ms
+replit.com
+2.3 KiB	230 ms
+…js/replit-dev-banner.js(replit.com)
+2.3 KiB
+230 ms
+Serve images in next-gen formats Potential savings of 34 KiB
+Image formats like WebP and AVIF often provide better compression than PNG or JPEG, which means faster downloads and less data consumption. Learn more about modern image formats.FCPLCP
+URL
+Resource Size
+Potential Savings
+comparevoiceai.com 1st party
+85.7 KiB	34.3 KiB
+img.max-w-full.h-auto.shadow-[1px_1px_0px_0px_rgba(0,0,0,1)]	
+/voiceaiflow.png(comparevoiceai.com)
+85.7 KiB
+34.3 KiB
+Properly size images Potential savings of 68 KiB
+Serve images that are appropriately-sized to save cellular data and improve load time. Learn how to size images.FCPLCP
+URL
+Resource Size
+Potential Savings
+comparevoiceai.com 1st party
+85.7 KiB	67.9 KiB
+img.max-w-full.h-auto.shadow-[1px_1px_0px_0px_rgba(0,0,0,1)]	
+/voiceaiflow.png(comparevoiceai.com)
+85.7 KiB
+67.9 KiB
+Image elements do not have explicit width and height
+Serve static assets with an efficient cache policy 8 resources found
+A long cache lifetime can speed up repeat visits to your page. Learn more about efficient cache policies.
+URL
+Cache TTL
+Transfer Size
+comparevoiceai.com 1st party
+849 KiB
+/assets/index-DS3wOCzY.js(comparevoiceai.com)
+4h
+298 KiB
+/audiofiles/2.mp3(comparevoiceai.com)
+4h
+139 KiB
+/audiofiles/3.mp3(comparevoiceai.com)
+4h
+139 KiB
+/audiofiles/1.mp3(comparevoiceai.com)
+4h
+99 KiB
+/voiceaiflow.png(comparevoiceai.com)
+4h
+86 KiB
+/audiofiles/4.mp3(comparevoiceai.com)
+4h
+71 KiB
+/assets/index-Ct7PeD8K.css(comparevoiceai.com)
+4h
+16 KiB
+Cloudflare utility 
+7 KiB
+/beacon.min.js/vcd15cbe…(static.cloudflareinsights.com)
+1d
+7 KiB
+Reduce unused CSS Potential savings of 13 KiB
+Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. Learn how to reduce unused CSS.FCPLCP
+URL
+Transfer Size
+Potential Savings
+comparevoiceai.com 1st party
+15.0 KiB	12.7 KiB
+/assets/index-Ct7PeD8K.css(comparevoiceai.com)
+15.0 KiB
+12.7 KiB
+Avoid chaining critical requests 5 chains found
+Minimize third-party usage Third-party code blocked the main thread for 0 ms
+More information about the performance of your application. These numbers don't directly affect the Performance score.
+Passed audits (26)
+Show
+83
+Accessibility
+These checks highlight opportunities to improve the accessibility of your web app. Automatic detection can only detect a subset of issues and does not guarantee the accessibility of your web app, so manual testing is also encouraged.
+Names and labels
+Buttons do not have an accessible name
+No form fields have multiple labels
+These are opportunities to improve the semantics of the controls in your application. This may enhance the experience for users of assistive technology, like a screen reader.
+Best practices
+[user-scalable="no"] is used in the <meta name="viewport"> element or the [maximum-scale] attribute is less than 5.
+These items highlight common accessibility best practices.
+ARIA
+ARIA input fields do not have accessible names
+ARIA IDs are unique
+These are opportunities to improve the usage of ARIA in your application which may enhance the experience for users of assistive technology, like a screen reader.
+Contrast
+Background and foreground colors do not have a sufficient contrast ratio.
+These are opportunities to improve the legibility of your content.
+Additional items to manually check (10)
+Show
+These items address areas which an automated testing tool cannot cover. Learn more in our guide on conducting an accessibility review.
+Passed audits (24)
+Show
+Not applicable (27)
+Show
+96
+Best Practices
+General
+Browser errors were logged to the console
+Missing source maps for large first-party JavaScript
+Trust and Safety
+Ensure CSP is effective against XSS attacks
+Use a strong HSTS policy
+Ensure proper origin isolation with COOP
+Mitigate clickjacking with XFO or CSP
+Passed audits (12)
+Show
+Not applicable (3)
+Show
+100
+SEO
+These checks ensure that your page is following basic search engine optimization advice. There are many additional factors Lighthouse does not score here that may affect your search ranking, including performance on Core Web Vitals. Learn more about Google Search Essentials.
+Additional items to manually check (1)
+Hide
+Structured data is valid
+Run these additional validators on your site to check additional SEO best practices.
+Passed audits (10)
+Show
+Captured at May 20, 2025, 2:26 PM GMT+5:30
+Emulated Desktop with Lighthouse 12.5.1
+Single page session
+Initial page load
+Custom throttling
+Using Chromium 136.0.0.0 with devtools
+Generated by Lighthouse 12.5.1 | File an issue

@@ -1,0 +1,39 @@
+[vite] connecting...
+[vite] connected.
+Warning: validateDOMNesting(...): <a> cannot appear as a descendant of &lt;a&gt;.
+    at a
+    at a
+    at https://47808878-ff86-451f-a2e4-e2a93235d252-00-10x2z6o9msp6y.picard.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=a9f0a7d1:352:18
+    at div
+    at header
+    at Calculator (https://47808878-ff86-451f-a2e4-e2a93235d252-00-10x2z6o9msp6y.picard.replit.dev/src/components/calculator/Calculator.tsx:29:22)
+    at div
+    at div
+    at Home
+    at Route (https://47808878-ff86-451f-a2e4-e2a93235d252-00-10x2z6o9msp6y.picard.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=a9f0a7d1:338:16)
+    at Switch (https://47808878-ff86-451f-a2e4-e2a93235d252-00-10x2z6o9msp6y.picard.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=a9f0a7d1:394:17)
+    at Router
+    at Provider (https://47808878-ff86-451f-a2e4-e2a93235d252-00-10x2z6o9msp6y.picard.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-GFOGKHJ2.js?v=a9f0a7d1:22:15)
+    at TooltipProvider (https://47808878-ff86-451f-a2e4-e2a93235d252-00-10x2z6o9msp6y.picard.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@radix-ui_react-tooltip.js?v=a9f0a7d1:59:5)
+    at QueryClientProvider (https://47808878-ff86-451f-a2e4-e2a93235d252-00-10x2z6o9msp6y.picard.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@tanstack_react-query.js?v=a9f0a7d1:2881:3)
+    at App (https://47808878-ff86-451f-a2e4-e2a93235d252-00-10x2z6o9msp6y.picard.replit.dev/src/App.tsx?v=hgxoJPtdZ0dbxXTW5IET8:76:43)
+at a
+at a
+at https://47808878-ff86-451f-a2e4-e2a93235d252-00-10x2z6o9msp6y.picard.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=a9f0a7d1:352:18
+at div
+at header
+at Calculator (https://47808878-ff86-451f-a2e4-e2a93235d252-00-10x2z6o9msp6y.picard.replit.dev/src/components/calculator/Calculator.tsx:29:22)
+at div
+at div
+at Home
+at Route (https://47808878-ff86-451f-a2e4-e2a93235d252-00-10x2z6o9msp6y.picard.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=a9f0a7d1:338:16)
+at Switch (https://47808878-ff86-451f-a2e4-e2a93235d252-00-10x2z6o9msp6y.picard.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=a9f0a7d1:394:17)
+at Router
+at Provider (https://47808878-ff86-451f-a2e4-e2a93235d252-00-10x2z6o9msp6y.picard.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-GFOGKHJ2.js?v=a9f0a7d1:22:15)
+at TooltipProvider (https://47808878-ff86-451f-a2e4-e2a93235d252-00-10x2z6o9msp6y.picard.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@radix-ui_react-tooltip.js?v=a9f0a7d1:59:5)
+at QueryClientProvider (https://47808878-ff86-451f-a2e4-e2a93235d252-00-10x2z6o9msp6y.picard.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@tanstack_react-query.js?v=a9f0a7d1:2881:3)
+at App (https://47808878-ff86-451f-a2e4-e2a93235d252-00-10x2z6o9msp6y.picard.replit.dev/src/App.tsx?v=hgxoJPtdZ0dbxXTW5IET8:76:43)
+at t.value (https://47808878-ff86-451f-a2e4-e2a93235d252-00-10x2z6o9msp6y.picard.replit.dev/__replco/static/devtools/eruda/3.2.3/eruda.js:2:17465)
+at new t (https://47808878-ff86-451f-a2e4-e2a93235d252-00-10x2z6o9msp6y.picard.replit.dev/__replco/static/devtools/eruda/3.2.3/eruda.js:2:12630)
+at t.value (https://47808878-ff86-451f-a2e4-e2a93235d252-00-10x2z6o9msp6y.picard.replit.dev/__replco/static/devtools/eruda/3.2.3/eruda.js:2:32766)
+at https://47808878-ff86-451f-a2e4-e2a93235d252-00-10x2z6o9msp6y.picard.replit.dev/__replco/static/devtools/eruda/3.2.3/eruda.js:2:34400

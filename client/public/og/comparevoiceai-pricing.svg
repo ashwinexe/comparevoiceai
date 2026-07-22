@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title description">
+  <title id="title">CompareVoiceAI voice AI pricing calculator</title>
+  <desc id="description">Compare source-linked speech-to-text, language-model, and text-to-speech pricing.</desc>
+  <rect width="1200" height="630" fill="#f7f7f7"/>
+  <defs>
+    <pattern id="dots" width="40" height="40" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="2" fill="#5e17eb" opacity="0.25"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="url(#dots)"/>
+  <rect x="62" y="52" width="1076" height="526" rx="4" fill="#111111"/>
+  <rect x="50" y="40" width="1076" height="526" rx="4" fill="#ffffff" stroke="#111111" stroke-width="8"/>
+  <rect x="78" y="70" width="252" height="54" fill="#5e17eb" stroke="#111111" stroke-width="4"/>
+  <text x="204" y="105" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" text-anchor="middle" letter-spacing="1">COMPAREVOICEAI</text>
+  <text x="78" y="205" fill="#111111" font-family="Arial, Helvetica, sans-serif" font-size="66" font-weight="800">VOICE AI PRICING</text>
+  <text x="78" y="276" fill="#5e17eb" font-family="Arial, Helvetica, sans-serif" font-size="66" font-weight="800">CALCULATOR</text>
+  <text x="80" y="326" fill="#333333" font-family="Arial, Helvetica, sans-serif" font-size="25">Source-linked model pricing for the complete voice stack</text>
+  <g font-family="Arial, Helvetica, sans-serif" font-weight="700" text-anchor="middle">
+    <rect x="78" y="370" width="305" height="112" fill="#efe8ff" stroke="#111111" stroke-width="5"/>
+    <text x="230.5" y="416" fill="#111111" font-size="28">STT</text>
+    <text x="230.5" y="452" fill="#333333" font-size="19" font-weight="400">Speech-to-text</text>
+    <rect x="411" y="370" width="305" height="112" fill="#dff7ed" stroke="#111111" stroke-width="5"/>
+    <text x="563.5" y="416" fill="#111111" font-size="28">LLM</text>
+    <text x="563.5" y="452" fill="#333333" font-size="19" font-weight="400">Language models</text>
+    <rect x="744" y="370" width="305" height="112" fill="#fff1c7" stroke="#111111" stroke-width="5"/>
+    <text x="896.5" y="416" fill="#111111" font-size="28">TTS</text>
+    <text x="896.5" y="452" fill="#333333" font-size="19" font-weight="400">Text-to-speech</text>
+  </g>
+  <line x1="78" y1="518" x2="1049" y2="518" stroke="#111111" stroke-width="4"/>
+  <text x="78" y="548" fill="#333333" font-family="Arial, Helvetica, sans-serif" font-size="18">CURRENT CATALOG VERIFIED 22 JULY 2026</text>
+</svg>
