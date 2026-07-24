@@ -8,7 +8,7 @@ import { SITE_URL, siteCoreContent } from "@shared/site-core";
 export default function TermsOfService() {
   const copy = siteCoreContent.terms;
   return (
-    <div className="min-h-screen bg-[#f7f7f7] font-sans bg-[radial-gradient(#5E17EB_1px,transparent_1px),radial-gradient(#5E17EB_1px,transparent_1px)] bg-[length:40px_40px] bg-[0_0,20px_20px] bg-fixed">
+    <div className="min-h-screen bg-[#f7f7f7] font-sans">
       <SEOHead
         title={copy.title}
         description={copy.description}

@@ -109,7 +109,7 @@ export default function BlogPostPage() {
   };
 
   return (
-    <div className="min-h-screen bg-[#f7f7f7] font-sans bg-[radial-gradient(#5E17EB_1px,transparent_1px),radial-gradient(#5E17EB_1px,transparent_1px)] bg-[length:40px_40px] bg-fixed">
+    <div className="min-h-screen bg-[#f7f7f7] font-sans">
       <SEOHead
         title={post.title}
         description={post.description}

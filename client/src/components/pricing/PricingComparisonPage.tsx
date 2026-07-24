@@ -91,7 +91,7 @@ export default function PricingComparisonPage({ category }: { category: PricingC
   };
 
   return (
-    <div className="min-h-screen bg-[#f7f7f7] font-sans bg-[radial-gradient(#5E17EB_1px,transparent_1px),radial-gradient(#5E17EB_1px,transparent_1px)] bg-[length:40px_40px] bg-fixed">
+    <div className="min-h-screen bg-[#f7f7f7] font-sans">
       <SEOHead title={copy.title} description={copy.description} canonicalUrl={canonicalUrl} />
       <JsonLd id={`${category}-catalog`} data={itemListSchema} />
 

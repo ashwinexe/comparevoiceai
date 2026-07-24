@@ -6,7 +6,7 @@ import SEOHead from "@/components/seo/SEOHead";
 
 export default function NotFound() {
   return (
-    <div className="min-h-screen bg-[#f7f7f7] font-sans bg-[radial-gradient(#5E17EB_1px,transparent_1px),radial-gradient(#5E17EB_1px,transparent_1px)] bg-[length:40px_40px] bg-[0_0,20px_20px] bg-fixed">
+    <div className="min-h-screen bg-[#f7f7f7] font-sans">
       <SEOHead title="Page Not Found | CompareVoiceAI" description="The requested CompareVoiceAI page could not be found." robots="noindex, follow" />
       <div className="container mx-auto px-4 py-12 min-h-screen flex items-center justify-center">
         <div className="w-full max-w-2xl">
