@@ -1,5 +1,24 @@
 export const SITE_NAME = "CompareVoiceAI";
 export const SITE_URL = "https://comparevoiceai.com";
+export const GOOGLE_ANALYTICS_MEASUREMENT_ID = "G-Z67T9PYG8M";
+export const GOOGLE_ANALYTICS_CAMPAIGN_PARAMETERS = [
+  "utm_id",
+  "utm_source",
+  "utm_medium",
+  "utm_campaign",
+  "utm_term",
+  "utm_content",
+  "utm_source_platform",
+  "utm_creative_format",
+  "utm_marketing_tactic",
+  "gclid",
+  "dclid",
+  "gbraid",
+  "wbraid",
+  "gad_source",
+  "msclkid",
+  "fbclid",
+] as const;
 export const PRICING_CATALOG_PATH = "/data/pricing-catalog.json";
 export const DEFAULT_OG_IMAGE_PATH = "/og/comparevoiceai-pricing.png";
 export const DEFAULT_OG_IMAGE_URL = `${SITE_URL}${DEFAULT_OG_IMAGE_PATH}`;
@@ -30,11 +49,11 @@ export const siteCoreContent = {
   privacy: {
     path: "/privacy/",
     title: "Privacy Policy | Voice AI Pricing Calculator",
-    description: "How this static calculator processes inputs in your browser, encodes optional shared URLs, and relies on ordinary hosting request logs.",
+    description: "How this static calculator handles browser-side inputs, shared URLs, Google Analytics measurement, and ordinary hosting request logs.",
     h1: "Privacy Policy",
-    lead: "How CompareVoiceAI handles calculator inputs, shared URLs, and ordinary hosting requests.",
+    lead: "How CompareVoiceAI handles calculator inputs, shared URLs, analytics, and ordinary hosting requests.",
     breadcrumbLabel: "Privacy Policy",
-    lastModified: "2026-07-22",
+    lastModified: "2026-07-24",
   },
   terms: {
     path: "/terms/",

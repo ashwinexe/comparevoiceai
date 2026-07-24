@@ -5,7 +5,12 @@ import { fileURLToPath } from "node:url";
 
 import type { BlogPost } from "../shared/blog-types";
 import { pricingCatalog } from "../shared/pricing-catalog";
-import { DEFAULT_OG_IMAGE_HEIGHT, DEFAULT_OG_IMAGE_WIDTH, voiceAIFAQs } from "../shared/site-core";
+import {
+  DEFAULT_OG_IMAGE_HEIGHT,
+  DEFAULT_OG_IMAGE_WIDTH,
+  GOOGLE_ANALYTICS_MEASUREMENT_ID,
+  voiceAIFAQs,
+} from "../shared/site-core";
 import { siteContent } from "../shared/site-content";
 
 const projectRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
@@ -70,6 +75,24 @@ async function assertLocalReference(reference: string, route: string): Promise<v
   if (!reference || reference.startsWith("#")) return;
   const target = localTargetPath(reference, route);
   if (target) await assertFile(target);
+}
+
+function assertGoogleAnalytics(html: string, route: string): void {
+  const escapedMeasurementId = GOOGLE_ANALYTICS_MEASUREMENT_ID.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  assert.equal(occurrences(html, /data-google-analytics=["']loader["']/gi), 1, `${route} must contain one Google Analytics loader`);
+  assert.equal(occurrences(html, /data-google-analytics=["']config["']/gi), 1, `${route} must contain one Google Analytics config`);
+  assert.equal(occurrences(html, /https:\/\/www\.googletagmanager\.com\/gtag\/js\?id=/gi), 1, `${route} must load Google Analytics exactly once`);
+  assert.equal(occurrences(html, /(?:window\.)?gtag\(['"]config['"],/gi), 1, `${route} must configure Google Analytics exactly once`);
+  assert.match(html, new RegExp(`googletagmanager\\.com/gtag/js\\?id=${escapedMeasurementId}`, "i"), `${route} has the wrong Google Analytics loader ID`);
+  assert.match(html, new RegExp(`gtag\\(['"]config['"],\\s*['"]${escapedMeasurementId}['"]`, "i"), `${route} has the wrong Google Analytics config ID`);
+  assert.match(html, /send_page_view\s*:\s*false/i, `${route} must disable automatic page views`);
+  assert.match(html, /allowedCampaignParameters/i, `${route} must restrict analytics query parameters`);
+  assert.match(html, /analyticsUrl\.searchParams\.delete\(parameter\)/i, `${route} must remove non-campaign query parameters`);
+  assert.match(html, /new URL\(document\.referrer\)/i, `${route} must sanitize its analytics referrer`);
+  assert.match(html, /analyticsReferrerUrl\.search\s*=\s*['"]["']/i, `${route} must remove referrer query parameters`);
+  assert.match(html, /analyticsReferrerUrl\.hash\s*=\s*['"]["']/i, `${route} must remove referrer fragments`);
+  assert.match(html, /__compareVoiceAIGtagConfigured\s*=\s*true/i, `${route} must mark its analytics config as initialized`);
+  assert.doesNotMatch(html, /analytics\.ahrefs\.com/i, `${route} unexpectedly loads the retired Ahrefs tracker`);
 }
 
 async function main(): Promise<void> {
@@ -137,6 +160,7 @@ async function main(): Promise<void> {
     const schemaIds = [...html.matchAll(/<script\s+type=["']application\/ld\+json["'][^>]*data-json-ld=["']([^"']+)["']/gi)].map((match) => match[1]);
     assert.equal(new Set(schemaIds).size, schemaIds.length, `${route} must not contain duplicate JSON-LD IDs`);
     assert.doesNotMatch(html, /replit-dev-banner|localhost:|127\.0\.0\.1:/i, `${route} contains development-only markup`);
+    assertGoogleAnalytics(html, route);
 
     const copy = fixedCopyByRoute.get(route);
     assert.ok(copy, `missing shared copy expectation for ${route}`);
@@ -220,6 +244,12 @@ async function main(): Promise<void> {
 
   const notFound = await readFile(path.join(distRoot, "404.html"), "utf8");
   assert.match(notFound, /name=["']robots["'][^>]+noindex/i, "404.html must be noindex");
+  assertGoogleAnalytics(notFound, "/404.html");
+
+  const privacy = htmlByRoute.get("/privacy")!;
+  assert.match(privacy, /Google Analytics/i, "privacy page must disclose Google Analytics");
+  assert.match(privacy, /share<\/code> parameter and URL fragments are removed/i, "privacy page must disclose shared-state sanitization");
+  assert.doesNotMatch(privacy, /No site analytics|does not set cookies or load analytics scripts/i, "privacy page contains a stale no-analytics claim");
 
   const sitemap = await readFile(path.join(distRoot, "sitemap.xml"), "utf8");
   const sitemapLocations = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((match) => match[1]);

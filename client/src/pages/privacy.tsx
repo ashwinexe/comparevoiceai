@@ -36,7 +36,7 @@ export default function PrivacyPolicy() {
             </h2>
             <div className="bg-gray-50 border-4 border-black p-4">
               <p className="font-mono text-sm leading-relaxed mb-4">
-                CompareVoiceAI is a static, client-side application. It has no accounts, database, analytics scripts, advertising trackers, or server API operated by this site.
+                CompareVoiceAI is a static, client-side application. It has no user accounts, calculator database, or server API. Google Analytics is used to measure page views and internal navigation.
               </p>
               <div className="space-y-2">
                 <div className="bg-white border-2 border-black p-2">
@@ -44,12 +44,12 @@ export default function PrivacyPolicy() {
                   <span className="font-mono text-xs">We do not require registration or login</span>
                 </div>
                 <div className="bg-white border-2 border-black p-2">
-                  <span className="font-mono font-bold text-xs uppercase tracking-tight">NO DATA STORAGE: </span>
-                  <span className="font-mono text-xs">Calculator inputs are processed locally in your browser</span>
+                  <span className="font-mono font-bold text-xs uppercase tracking-tight">LOCAL CALCULATIONS: </span>
+                  <span className="font-mono text-xs">Calculator inputs and results are processed locally in your browser</span>
                 </div>
                 <div className="bg-white border-2 border-black p-2">
-                  <span className="font-mono font-bold text-xs uppercase tracking-tight">NO SITE TRACKING: </span>
-                  <span className="font-mono text-xs">The shipped site does not set cookies or load analytics scripts</span>
+                  <span className="font-mono font-bold text-xs uppercase tracking-tight">SANITIZED PAGE VIEWS: </span>
+                  <span className="font-mono text-xs">Shared calculator parameters and URL fragments are removed; recognized campaign and advertising click parameters may be retained for attribution</span>
                 </div>
               </div>
             </div>
@@ -63,10 +63,9 @@ export default function PrivacyPolicy() {
               <ul className="list-disc pl-4 font-mono text-sm space-y-2">
                 <li>Personal identification information (name, email, phone)</li>
                 <li>Calculator inputs or calculation results</li>
-                <li>Usage patterns or behavioral data</li>
                 <li>Third-party authentication tokens</li>
               </ul>
-              <p className="font-mono text-xs mt-4">Your chosen hosting provider or content-delivery network may independently retain ordinary request logs such as IP address, path, timestamp, and user agent. Its policy and configuration control those logs.</p>
+              <p className="font-mono text-xs mt-4">Google Analytics processes limited site-usage information described below. The hosting provider or content-delivery network may also retain ordinary request logs such as IP address, path, timestamp, and user agent under its own policy.</p>
             </div>
           </section>
 
@@ -76,12 +75,23 @@ export default function PrivacyPolicy() {
             </h2>
             <div className="bg-gray-50 border-4 border-black p-4">
               <p className="font-mono text-sm leading-relaxed mb-4">
-                Pricing and blog data are embedded in the static build. The calculator does not fetch provider APIs. External provider documentation is contacted only when you follow one of its links.
+                Pricing and blog data are embedded in the static build. The calculator does not fetch provider APIs. External provider documentation is contacted only when you follow one of its links. Google Analytics is contacted when the site loads and as you move between site pages.
               </p>
-              <div className="bg-white border-2 border-black p-2">
-                <span className="font-mono font-bold text-xs uppercase tracking-tight">HOSTING: </span>
-                <span className="font-mono text-xs">The deployer chooses the static host; that host may keep standard request logs</span>
+              <div className="space-y-2">
+                <div className="bg-white border-2 border-black p-2">
+                  <span className="font-mono font-bold text-xs uppercase tracking-tight">GOOGLE ANALYTICS: </span>
+                  <span className="font-mono text-xs">May process sanitized page locations, referrers, timestamps, browser and device information, approximate location, interaction events, and cookie or session identifiers</span>
+                </div>
+                <div className="bg-white border-2 border-black p-2">
+                  <span className="font-mono font-bold text-xs uppercase tracking-tight">COOKIES: </span>
+                  <span className="font-mono text-xs">Analytics loads when the site opens and may set or access cookies unless they are blocked by browser or privacy settings</span>
+                </div>
+                <div className="bg-white border-2 border-black p-2">
+                  <span className="font-mono font-bold text-xs uppercase tracking-tight">HOSTING: </span>
+                  <span className="font-mono text-xs">The static host may keep standard request logs under its own policy</span>
+                </div>
               </div>
+              <p className="font-mono text-xs mt-4">See <a className="underline" href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google's Privacy Policy</a> for information about Google's processing.</p>
             </div>
           </section>
 
@@ -91,12 +101,12 @@ export default function PrivacyPolicy() {
             </h2>
             <div className="bg-gray-50 border-4 border-black p-4">
               <p className="font-mono text-sm leading-relaxed mb-4">
-                The site itself has no account or database record to access, modify, or delete. Contact the deployment host about any request logs it controls.
+                The site has no user account or calculator database record to access, modify, or delete. Google Analytics processes usage events associated with cookie or session identifiers; CompareVoiceAI does not link them to a user account.
               </p>
               <div className="space-y-2">
                 <div className="bg-white border-2 border-black p-2">
-                  <span className="font-mono font-bold text-xs uppercase tracking-tight">BROWSER CONTROL: </span>
-                  <span className="font-mono text-xs">All calculations happen in your browser</span>
+                  <span className="font-mono font-bold text-xs uppercase tracking-tight">ANALYTICS CONTROL: </span>
+                  <span className="font-mono text-xs">You can block analytics scripts or clear analytics cookies using browser or privacy tools</span>
                 </div>
                 <div className="bg-white border-2 border-black p-2">
                   <span className="font-mono font-bold text-xs uppercase tracking-tight">CLEAR THE URL: </span>
@@ -128,7 +138,7 @@ export default function PrivacyPolicy() {
               </p>
               <div className="bg-white border-2 border-black p-2 mt-2">
                 <span className="font-mono font-bold text-xs uppercase tracking-tight">EFFECTIVE DATE: </span>
-                <span className="font-mono text-xs">July 22, 2026</span>
+                <span className="font-mono text-xs">July 24, 2026</span>
               </div>
             </div>
           </section>

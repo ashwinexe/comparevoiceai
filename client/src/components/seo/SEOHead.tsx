@@ -8,6 +8,7 @@ import {
   SITE_NAME,
   SITE_URL,
 } from "@shared/site-core";
+import { trackBrowserPageView } from "@/lib/analytics";
 
 interface SEOHeadProps {
   title?: string;
@@ -117,7 +118,11 @@ export default function SEOHead({
     } else {
       schema?.remove();
     }
-  }, [description, fullUrl, modifiedTime, ogImage, ogImageAlt, ogImageHeight, ogImageWidth, ogType, publishedTime, robots, structuredData, title]);
+
+    // SEO metadata is now current, so SPA page views receive the new title and
+    // a sanitized location instead of stale metadata or shared calculator inputs.
+    trackBrowserPageView(window.location.href, title);
+  }, [description, fullUrl, modifiedTime, ogImage, ogImageAlt, ogImageHeight, ogImageWidth, ogType, pathname, publishedTime, robots, structuredData, title]);
 
   return null;
 }

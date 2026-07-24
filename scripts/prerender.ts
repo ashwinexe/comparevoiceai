@@ -16,6 +16,8 @@ import {
   DEFAULT_OG_IMAGE_URL,
   DEFAULT_OG_IMAGE_WIDTH,
   faqPageSchema,
+  GOOGLE_ANALYTICS_CAMPAIGN_PARAMETERS,
+  GOOGLE_ANALYTICS_MEASUREMENT_ID,
   pricingLinksForTags,
   PRICING_CATALOG_PATH,
   publisherOrganization,
@@ -534,7 +536,7 @@ function blogPostPage(post: BlogPost, posts: BlogPost[]): PageDefinition {
 function privacyPage(): PageDefinition {
   const copy = siteContent.privacy;
   const route = copy.path;
-  const content = `<section><h2>Browser-side calculations</h2><p>Calculator inputs and estimates are processed in your browser. Shared-result URLs can contain encoded calculator parameters when you choose to create one.</p></section><section><h2>No site analytics</h2><p>The shipped site has no accounts, database, analytics scripts, advertising trackers, or server API. Your chosen hosting or CDN provider may independently process standard request information such as IP address, user agent, path, and timestamp under its own policy.</p></section><section><h2>Contact</h2><p>Questions about this policy can be sent to <a href="mailto:contact@rnikhil.com">contact@rnikhil.com</a>.</p></section>`;
+  const content = `<section><h2>Browser-side calculations</h2><p>Calculator inputs and estimates are processed in your browser. Shared-result URLs can contain encoded calculator parameters when you choose to create one; the <code>share</code> parameter and URL fragments are removed from analytics page locations. Recognized campaign parameters and advertising click identifiers may be retained for attribution.</p></section><section><h2>Google Analytics</h2><p>CompareVoiceAI uses Google Analytics to measure page views and internal navigation. Google Analytics may process sanitized page locations, referrers, timestamps, browser and device information, approximate location, interaction events, and cookie or session identifiers. Analytics loads when the site opens and may set or access cookies unless they are blocked by browser or privacy settings. Read <a href="https://policies.google.com/privacy">Google's Privacy Policy</a> for details.</p></section><section><h2>Hosting</h2><p>The site has no user accounts, calculator database, or server API. The static host or CDN may independently process standard request information such as IP address, user agent, path, and timestamp under its own policy.</p></section><section><h2>Contact</h2><p>Questions about this policy can be sent to <a href="mailto:contact@rnikhil.com">contact@rnikhil.com</a>. Effective July 24, 2026.</p></section>`;
   return { route, title: copy.title, description: copy.description, body: layout(copy.h1, copy.lead, content, { breadcrumb: breadcrumb([{ name: "Home", route: "/" }, { name: copy.breadcrumbLabel }]) }), schemas: [breadcrumbSchema([{ name: "Home", route: "/" }, { name: copy.breadcrumbLabel, route }])], lastModified: copy.lastModified };
 }
 
@@ -548,6 +550,33 @@ function termsPage(): PageDefinition {
 const staticStyles = `<style id="static-prerender-styles">
   :root{font-family:Inter,system-ui,sans-serif;color:#111;background:#f7f7f7}body{margin:0}.skip-link{position:absolute;left:-9999px}.skip-link:focus{left:1rem;top:1rem;background:#fff;padding:.75rem;z-index:20}.static-nav{display:flex;gap:.75rem;flex-wrap:wrap;padding:1rem max(1rem,calc((100vw - 1120px)/2));background:#fff;border-bottom:3px solid #111}.static-nav a,.static-footer a,.static-page a{color:#3f0ca3}.static-page{max-width:1120px;margin:0 auto;padding:1.5rem 1rem 3rem}.static-hero{background:#fff;border:4px solid #111;padding:clamp(1.25rem,4vw,2.5rem);box-shadow:8px 8px 0 #111;margin:1rem 0 2rem}.static-hero h1{font-size:clamp(2rem,6vw,4rem);line-height:1.05;margin:0 0 1rem}.static-page section,.static-article{background:#fff;border:3px solid #111;padding:1.25rem;margin:1.5rem 0}.static-notice{border:3px solid #111;background:#fff4bf;padding:1rem;margin:1.5rem 0}.breadcrumbs ol{display:flex;gap:.5rem;list-style:none;padding:0;flex-wrap:wrap}.breadcrumbs li+li:before{content:'›';margin-right:.5rem}.table-scroll{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:.9rem}caption{text-align:left;font-weight:700;padding:.5rem 0}th,td{border:1px solid #777;padding:.55rem;text-align:left;vertical-align:top}th{background:#eee}.provider-grid,.article-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1rem}.provider-card,.article-card{border:2px solid #111;padding:1rem}.article-card h2,.provider-card h2{font-size:1.15rem}.static-article{max-width:850px;margin:1.5rem auto}.article-content{line-height:1.65}.article-content h2,.article-content h3{line-height:1.2;margin-top:2rem}.article-content img{max-width:100%;height:auto}.article-content table{display:block;max-width:100%;overflow-x:auto}.article-content pre{max-width:100%;overflow:auto;background:#171717;color:#f7f7f7;padding:1rem}.article-content code{font-family:ui-monospace,monospace}.article-content blockquote{border-left:4px solid #5e17eb;margin-left:0;padding-left:1rem}.static-footer{border-top:4px solid #111;background:#fff;padding:1.5rem max(1rem,calc((100vw - 1120px)/2))}.byline{color:#555}@media(max-width:600px){th,td{padding:.4rem}.static-page{padding-top:.5rem}}
 </style>`;
+
+const googleAnalyticsHead = `<script async data-google-analytics="loader" src="https://www.googletagmanager.com/gtag/js?id=${escapeHtml(GOOGLE_ANALYTICS_MEASUREMENT_ID)}"></script>
+    <script data-google-analytics="config">
+      window.dataLayer = window.dataLayer || [];
+      window.gtag = window.gtag || function(){window.dataLayer.push(arguments);};
+      window.gtag('js', new Date());
+      var analyticsUrl = new URL(window.location.href);
+      var allowedCampaignParameters = ${JSON.stringify(GOOGLE_ANALYTICS_CAMPAIGN_PARAMETERS)};
+      Array.from(analyticsUrl.searchParams.keys()).forEach(function(parameter) {
+        if (!allowedCampaignParameters.includes(parameter)) analyticsUrl.searchParams.delete(parameter);
+      });
+      analyticsUrl.hash = '';
+      var analyticsReferrer = '';
+      try {
+        var analyticsReferrerUrl = new URL(document.referrer);
+        analyticsReferrerUrl.search = '';
+        analyticsReferrerUrl.hash = '';
+        analyticsReferrer = analyticsReferrerUrl.toString();
+      } catch (error) {}
+      window.gtag('config', ${JSON.stringify(GOOGLE_ANALYTICS_MEASUREMENT_ID)}, {
+        send_page_view: false,
+        page_location: analyticsUrl.toString(),
+        page_path: window.location.pathname,
+        page_referrer: analyticsReferrer
+      });
+      window.__compareVoiceAIGtagConfigured = true;
+    </script>`;
 
 function injectHead(template: string, page: PageDefinition): string {
   const canonical = absoluteUrl(page.route);
@@ -580,6 +609,7 @@ function injectHead(template: string, page: PageDefinition): string {
     <meta name="twitter:title" content="${escapeHtml(page.title)}">
     <meta name="twitter:description" content="${escapeHtml(page.description)}">
     <meta name="twitter:image" content="${escapeHtml(image)}">
+    ${googleAnalyticsHead}
     ${(page.schemas ?? []).map((schema, index) => {
       const schemaType = String((schema as { "@type"?: string })["@type"] ?? "");
       const id = schemaType === "BreadcrumbList" ? "breadcrumbs"
