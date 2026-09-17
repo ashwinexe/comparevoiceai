@@ -74,7 +74,7 @@ test("catalog has one globally unique stable ID per row", () => {
   }
 });
 
-test("every row has an HTTPS source and the current verification date", () => {
+test("every row has an HTTPS source and a date at least as recent as the catalog baseline", () => {
   assert.equal(pricingCatalog.verifiedAt, PRICING_VERIFIED_DATE);
   assert.match(PRICING_VERIFIED_DATE, /^\d{4}-\d{2}-\d{2}$/);
   assert.ok(
@@ -83,9 +83,10 @@ test("every row has an HTTPS source and the current verification date", () => {
   );
 
   for (const record of catalogRecords) {
-    assert.equal(
-      record.lastVerified,
-      PRICING_VERIFIED_DATE,
+    assert.match(record.lastVerified, /^\d{4}-\d{2}-\d{2}$/);
+    assert.ok(Number.isFinite(Date.parse(`${record.lastVerified}T00:00:00Z`)));
+    assert.ok(
+      record.lastVerified >= PRICING_VERIFIED_DATE,
       `${record.id} has stale or inconsistent verification metadata`,
     );
 
@@ -98,6 +99,22 @@ test("every row has an HTTPS source and the current verification date", () => {
     assert.equal(source.protocol, "https:", `${record.id} source must use HTTPS`);
     assert.ok(source.hostname.includes("."), `${record.id} source must have a public hostname`);
   }
+});
+
+test("Gradium shared-credit overage rows stay out of usage-only calculators", () => {
+  const tts = recordById(ttsCatalog, "gradium_tts_xs_overage");
+  const stt = recordById(sttCatalog, "gradium_stt_xs_overage");
+  assert.equal(tts.costPerMillionCharacters, 6.9 * 10);
+  assert.ok(Math.abs((stt.costPerMinute ?? 0) - 6.9 / 100000 * 3 * 60) < 1e-10);
+  assert.equal(tts.monthlyCommitment, 13);
+  assert.equal(tts.includedCharacters, 225000);
+  for (const row of [tts, stt]) {
+    assert.equal(row.priceQualifier, "overage");
+    assert.equal(row.lastVerified, "2026-09-17");
+    assert.equal(row.calculatorEligible, false);
+  }
+  assert.equal(ttsProviders.some((row) => row.id === tts.id), false);
+  assert.equal(sttProviders.some((row) => row.id === stt.id), false);
 });
 
 test("lifecycle and calculator-eligibility metadata is internally consistent", () => {

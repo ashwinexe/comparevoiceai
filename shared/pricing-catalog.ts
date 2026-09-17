@@ -164,6 +164,12 @@ export const llmCatalog: LLMCatalogRecord[] = [
 
 export const sttCatalog: STTCatalogRecord[] = [
   {
+    id: "gradium_stt_xs_overage", name: "Gradium STT — XS overage", modelId: null, provider: "Gradium", pricingHost: "Gradium API",
+    description: "Real-time streaming speech-to-text with semantic turn detection for voice agents.", status: "active", tier: "XS overage", currency: "USD", priceQualifier: "overage", billingMetric: "audio_minute", mode: "streaming", costPerMinute: 0.01242,
+    sourceUrl: "https://gradium.ai/pricing", lastVerified: "2026-09-17", calculatorEligible: false,
+    notes: ["XS costs $13/month and includes 225,000 credits shared across services.", "Additional 100,000 credits cost $6.90 on XS. STT consumes 3 credits/second: $6.90 / 100,000 × 180 = $0.01242/minute of additional usage.", "This is an overage rate, not a standalone pay-as-you-go tariff; subscription minimums and included credits are not modeled by the calculator.", "Documentation: https://docs.gradium.ai/guides/speech-to-text-overview"],
+  },
+  {
     id: "openai_gpt_4o_transcribe", name: "GPT-4o Transcribe", modelId: "gpt-4o-transcribe", provider: "OpenAI", pricingHost: "OpenAI API",
     description: "Current token-billed transcription model.", status: "active", tier: "standard", currency: "USD", priceQualifier: "unavailable", billingMetric: "audio_tokens", mode: "pre-recorded", costPerMinute: null,
     sourceUrl: "https://developers.openai.com/api/docs/models/gpt-4o-transcribe", lastVerified: verified, calculatorEligible: false,
@@ -369,6 +375,12 @@ export const sttCatalog: STTCatalogRecord[] = [
 ];
 
 export const ttsCatalog: TTSCatalogRecord[] = [
+  {
+    id: "gradium_tts_xs_overage", name: "Gradium TTS — XS overage", modelId: null, provider: "Gradium", pricingHost: "Gradium API",
+    description: "Real-time streaming text-to-speech with instant voice cloning and voice design from a text prompt.", status: "active", tier: "XS overage", currency: "USD", priceQualifier: "overage", billingMetric: "subscription_credits", costPerMillionCharacters: 69, monthlyCommitment: 13, includedCharacters: 225000,
+    sourceUrl: "https://gradium.ai/pricing", lastVerified: "2026-09-17", calculatorEligible: false,
+    notes: ["XS includes 225,000 credits shared across TTS, STT, and translation. The included character allowance assumes all credits are used for TTS.", "TTS consumes 1 credit/character; additional 100,000 credits cost $6.90 on XS, equivalent to $69/M additional characters.", "Higher subscription tiers have different allowances and overage rates. Free credits are for non-commercial use.", "Documentation: https://docs.gradium.ai/guides/text-to-speech-overview"],
+  },
   {
     id: "openai_tts_1", name: "TTS-1", modelId: "tts-1", provider: "OpenAI", pricingHost: "OpenAI API", description: "Active realtime-optimized character-billed TTS model.",
     status: "active", tier: "standard", currency: "USD", priceQualifier: "list", billingMetric: "characters", costPerMillionCharacters: 15,
